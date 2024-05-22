@@ -28,10 +28,10 @@ class prescription:
 
 
     def patient_details(self):
-        self.name= "Aaqib Bashir" #input("Enter the name of the patient: ")
+        self.name= "John Doe" #input("Enter the name of the patient: ")
         self.age= "22"#input("Enter the age of the patient: ")
-        self.gender= "male"#input("Enter the gender of the patient: ")
-        self.address="Noor Bagh"#input("Enter the address of the patient: ")
+        self.gender= "Male"#input("Enter the gender of the patient: ")
+        self.address=""#input("Enter the address of the patient: ")
 
     def text_width(self,text,font,size):
         return self.c.stringWidth(text,font,size)
@@ -77,9 +77,10 @@ class prescription:
             f"Name: {self.name}",
             f"Age: {self.age}",
             f"Gender: {self.gender}",
-            f"Date: {date.today()}"
+            f"Date: {date.today()}",
+            f"Address: {self.address}"
         ]
-        x_coordinate = 50  # Starting x-coordinate
+        x_coordinate = 10  # Starting x-coordinate
         y_coordinate = 690  # Starting y-coordinate
 
         for text in texts:

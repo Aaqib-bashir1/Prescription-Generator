@@ -8,10 +8,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 
 
 class prescription:
-    from reportlab.pdfgen import canvas
-    from reportlab.lib.pagesizes import letter
-    from svglib.svglib import svg2rlg
-    from reportlab.graphics import renderPDF
+    
     def __init__(self):
         self.patient_details()
         self.doctor_details()
